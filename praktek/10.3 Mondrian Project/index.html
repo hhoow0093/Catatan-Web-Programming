@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .grid-container{
+      display: grid;
+      grid-template-columns: 320px 351px 50px;
+      grid-template-rows: 414px 285px 20px;
+      height: 748px;
+      width: 748px;
+      gap: 9px;
+      background-color: black;
+     
+    }
+    .grid-item{
+      background-color: #F0F1EC;
+    }
+
+    .red{
+      background-color: #E72F24;
+      height: 414px;
+      width: 320px;
+      
+      
+    }
+
+    .blue{
+      background-color: #004592;
+      width: 59px;
+      height: 130px;
+      z-index: 1;
+      grid-area: 2/3/3/4;
+      border-bottom: 10px solid black;
+    }
+    
+    .yellow{
+      background-color: #F9D01E;
+      width:198px;
+      height: 31px;
+      grid-area: 3/2/4/3;
+      z-index: 1;
+      border-right: 9px solid black;
+    }
+    
+    .black{
+        background-color: #232629;
+        grid-area: 3/2/4/3;
+        height: 31px;
+    }
+
+    .pertama{
+      grid-area: 1/2/2/4;
+      width: 419px;
+      
+
+    }
+
+    .kedua{
+      height: 295x;
+      width: 320px;
+      grid-area: 2/1/3/2;
+    }
+
+    .ketiga{
+      grid-area: 2/2/3/3;
+    }
+
+    .keempat{
+      grid-area: 2/3/3/4;
+      width: 59px;
+      height: 326px;
+    }
+
+    .kelima{
+      grid-area: 3/1/4/2;
+      height: 31px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-item red"></div>
+    <div class="grid-item blue"></div>
+    <div class="grid-item yellow"></div>
+    <div class="grid-item black"></div>
+    <div class="grid-item pertama"></div>
+    <div class="grid-item kedua"></div>
+    <div class="grid-item ketiga"></div>
+    <div class="grid-item keempat"></div>
+    <div class="grid-item kelima"></div>
+  </div>
+</body>
+
+</html>
