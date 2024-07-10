@@ -1,0 +1,172 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.test-img{
+  width: 12em;
+  height: 1em;
+  object-fit: cover;
+}
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  
+
+  
+  #tombol{
+    width: auto;
+    
+  }
+  #pembungkus-tombol{
+    display: flex;
+    justify-content: center;
+  }
+
+  .gradient-background{
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  #Judul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #JudulPertama{
+    order: 2;
+
+  }
+
+  #JudulKedua{
+    order: 1;
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #Fitur{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+
+
+  }
+  #tombol{
+    width: auto;
+    
+  }
+  #pembungkus-tombol{
+    display: flex;
+    justify-content: center;
+  }
+
+  .gradient-background{
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  #Judul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #JudulPertama{
+    order: 2;
+
+  }
+
+  #JudulKedua{
+    order: 1;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  
+  #footer{
+    height: 80vh;
+  }
+  #tombol{
+    width: auto;
+    
+  }
+  #pembungkus-tombol{
+    display: flex;
+    justify-content: center;
+  }
+  .gradient-background{
+    padding-top: 70px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  #Judul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  #JudulPertama{
+    order: 2;
+
+  }
+
+  #JudulKedua{
+    order: 1;
+
+  }
+  
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .gradient-background{
+    padding-top: 90px;
+  }
+
+  #footer{
+    height: 60vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  #footer{
+    height: 60vh;
+  }
+  .gradient-background{
+    padding-top: 100px;
+  }
+}
