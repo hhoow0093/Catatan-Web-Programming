@@ -1,0 +1,195 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#Eye-catcher {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url("./image/coding-1853305_640.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#Eye-catcher::before {
+  content: ""; /* biar konten background agak kehitaman bisa dilihat*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #656565, #353535, #000000);
+  background-size: 300% 100%; /*biar animasinya bisa lebih nampak*/
+  opacity: 0.5;
+  animation: animateBackground 10s linear infinite;
+  z-index: 1; /* biar konten selalu di depan image */
+}
+
+#border-kontak {
+  border: 1px solid black;
+  padding: 2em;
+}
+
+#Picture {
+  position: relative;
+}
+
+#Picture > img {
+  transition: filter 0.1s ease-in-out;
+}
+
+#Picture .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */  
+}
+
+#Picture > img:hover {
+  filter: brightness(0.5);
+}
+
+#Picture > img:hover + .hover-text {
+    display: block; /* Show the text on hover */
+    opacity: 1;
+  }
+
+@keyframes animateBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Your CSS rules for extra small devices */
+  #Eye-catcher {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    background-image: url("./image/coding-1853305_640.jpg");
+    background-size: cover;
+  }
+
+  #Eye-catcher > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  #MyprofileText {
+    order: 1;
+    text-align: center;
+  }
+
+  #Picture > img {
+    border-radius: 50%;
+    width: 12em;
+    height: 12em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  /* Your CSS rules for medium devices */
+  #Eye-catcher {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    background-image: url("./image/coding-1853305_640.jpg");
+    background-size: cover;
+  }
+
+  #Eye-catcher > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  #MyprofileText {
+    order: 1;
+    text-align: center;
+  }
+
+  #Picture > img {
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* Your CSS rules for large devices */
+  #Eye-catcher {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    background-image: url("./image/coding-1853305_640.jpg");
+    background-size: cover;
+  }
+
+  #Eye-catcher > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  #MyprofileText {
+    order: 1;
+    text-align: center;
+  }
+
+  #Picture > img {
+    border-radius: 50%;
+    width: 25em;
+    height: 25sem;
+  }
+}
+
+/*Largest screen*/
+@media only screen and (min-width: 1200px) {
+  #Eye-catcher {
+    position: relative;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    background-image: url("./image/coding-1853305_640.jpg");
+    background-size: cover;
+  }
+
+  #Eye-catcher > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  #Picture > img {
+    border-radius: 50%;
+    width: 25em;
+    height: 25em;
+  }
+}
