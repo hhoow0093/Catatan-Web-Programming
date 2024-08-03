@@ -55,10 +55,20 @@ let h2ElementById = document.getElementById('header2');
 // By Class Name (if class is added)
 let h2ElementByClassName = document.getElementsByClassName('header')[0];
 */ 
-var button = document.getElementsByTagName('button')[0];
-button.addEventListener('click', () => {
-    const change = document.querySelector('body > ul').getElementsByTagName(`li`)[2];
-    change.innerHTML = '<h1>hello</h1>';
 
-  });
+// var button = document.getElementsByTagName('button')[0];
+// button.addEventListener('click', () => {
+//     const change = document.querySelector('body > ul').getElementsByTagName(`li`)[2];
+//     change.innerHTML = '<h1>hello</h1>';
+
+//   });
+
+// document.querySelectorAll('ul > li')[0].getElementsByTagName('a')[0].style.color = 'red';
+
+//  document.querySelector('body > button').style.backgroundColor = "yellow";
+
+var button = document.querySelector('body > button');
+button.addEventListener('click', () => {
+  document.querySelector('body > h1').classList.toggle('large');
+})
 

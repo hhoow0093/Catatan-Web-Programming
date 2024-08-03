@@ -1,3 +1,7 @@
 h1 {
   color: red;
 }
+
+.large{
+  font-size: 10rem;
+}
