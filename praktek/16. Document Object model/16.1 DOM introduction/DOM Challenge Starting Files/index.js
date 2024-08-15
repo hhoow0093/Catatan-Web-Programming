@@ -1,3 +1,4 @@
+// basic common uses in DOM
 /*
 // Select the element with ID 'header'
 let header = document.getElementById('header');
@@ -27,6 +28,7 @@ button.addEventListener('click', () => {
 });
 */ 
 
+// selecting parts of the webiste using DOM
 /*
 // By Tag Name
 let h2ElementByTagName = document.getElementsByTagName('h2')[0];
@@ -56,19 +58,29 @@ let h2ElementById = document.getElementById('header2');
 let h2ElementByClassName = document.getElementsByClassName('header')[0];
 */ 
 
-// var button = document.getElementsByTagName('button')[0];
-// button.addEventListener('click', () => {
-//     const change = document.querySelector('body > ul').getElementsByTagName(`li`)[2];
-//     change.innerHTML = '<h1>hello</h1>';
 
-//   });
+// change html tag using button event listener
+/*
+var button = document.getElementsByTagName('button')[0];
+button.addEventListener('click', () => {
+    const change = document.querySelector('body > ul').getElementsByTagName(`li`)[2];
+    change.innerHTML = '<h1>hello</h1>';
+   });
+*/
 
-// document.querySelectorAll('ul > li')[0].getElementsByTagName('a')[0].style.color = 'red';
+// changing html tag style 
+/*
+document.querySelectorAll('ul > li')[0].getElementsByTagName('a')[0].style.color = 'red';
+ document.querySelector('body > button').style.backgroundColor = "yellow";
+*/
 
-//  document.querySelector('body > button').style.backgroundColor = "yellow";
-
+//changing html tag style using button event listener function by adding class list
+/*
 var button = document.querySelector('body > button');
 button.addEventListener('click', () => {
   document.querySelector('body > h1').classList.toggle('large');
 })
+*/
 
+//changing html attribute
+document.querySelectorAll('body > ul > li > a ')[0].setAttribute("href", "https://www.youtube.com");

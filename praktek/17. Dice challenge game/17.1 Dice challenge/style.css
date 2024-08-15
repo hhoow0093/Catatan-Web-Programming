@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./Image/board.jpg');
+    font-family: cursive;
+}
+
+body {
+    width: 100%;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.playground{
+    display: flex;
+    gap:10em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button.go{
+color: aliceblue;
+background-color: black;
+width: 10em;
+font-size: 1em;
+border: none;
+font-family: cursive;
+}
+
+.stop{
+    color: aliceblue;
+    background-color: black;
+    width: 10em;
+    font-size: 1em;
+    border: none;
+    font-family: cursive;
+}
+
+button.stop:hover{
+    background-color: rgb(99, 99, 99);
+}
+
+button.go:hover{
+    background-color: rgb(99, 99, 99);
+}
+
+
+.board{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.box1, .box2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media (max-width: 413px) {
+    .playground{
+        gap: 2em;
+        flex-direction: column;
+    }
+
+    .board{
+        margin-top: 15em;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 975px) {
+    .playground{
+        gap: 2em;
+        flex-direction: column;
+    }
+
+    .board{
+        margin-top: 10em;
+    }
+}
