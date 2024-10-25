@@ -1,0 +1,20 @@
+Beberapa Command line yang sering dipakai dalam sistem unix
+
+1. cd <nama.file> -> ke tempat direktori
+2. cd.. -> balik ke direktori sebelumnya
+3. cd ~ -> balik ke direktori root
+
+4. mkdir <nama.folder> -> membuat folder baru
+5. rmdir <nama.folder> -> menghapus folder yang ada tapi kosong
+6. rm <nama.file> -> menghapus file
+7. rm -r <nama.folder> -> hapus folder yang ada isi
+8. pwd -> cetak lokasi user
+9. touch <nama.file> -> buat file
+10. cp <nama.file. <nama.file> -> copy konten file pertama ke file kedua
+11. mv <nama.lama> <nama.baru> -> rename nama file/direktori
+12. mv <nama.file. /lokasi/baru -> memindahkan file
+
+alt + click untuk edit command unix. atau dengan tombol -> <-
+ctrl + a -> ke awal
+ctrl + e -> akhir
+ctrl + u -> clear line unix
