@@ -1,0 +1,37 @@
+Pembuatan server Express
+
+1. create Directory
+2. create index.js
+3. initialize npm
+4. install express package
+5. write server application in index.js
+6. start server
+
+npm i express
+npm i nodemon
+nodemon index.js - restarting changes while server is running
+
+HTTP REQUEST
+1. GET -> request resource
+2. POST -> sending resource
+3. PUT -> replacing new resource from the old resource
+4. PATCH -> update resource from the old resource
+5. DELETE -> delete resource
+
+HTTP response status code
+1. informational responses (100 - 199)
+2. successful responses (200 - 299)
+3. Redirection responses (300 - 399)
+4. Client error responses (400 - 499)
+5. Server error responses (500 - 599)
+
+middleware for express & node
+1. body-parser
+
+import express from "express, 
+import {fileUrlToPath} from "url"
+import {dirname} from "path"
+
+// biar point arah file yang benar menggunakan package
+
+const __dirname = dirname(fileUrlToPath(import.meta.url));
